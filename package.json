@@ -1,0 +1,9 @@
+{
+  "version": "0.0.1",
+  "name": "Talk",
+  "private": true,
+  "description": "Some talk",
+  "scripts": {
+    "start": ".\\reveal.js\\node_modules\\.bin\\gulp --cwd .\\ -f .\\reveal.js\\gulpfile.js serve"
+  }
+}
