@@ -12,6 +12,7 @@
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="reveal.js/lib/css/atom-one-dark.css"/>
+<!--    <link rel="stylesheet" href="reveal.js/plugin/highlight/zenburn.css"/>-->
 
     <style>
         .line {
@@ -27,34 +28,34 @@
             color: #93a1a1;
         }
 
-        code {
-            counter-reset: line;
-        }
+        /*code {*/
+        /*    counter-reset: line;*/
+        /*}*/
 
-        code > span.line, code > span.line > span.line {
-            counter-increment: line;
-        }
+        /*code > span.line, code > span.line > span.line {*/
+        /*    counter-increment: line;*/
+        /*}*/
 
-        code > span.line:before, code > span.line > span.line:before {
-            content: counter(line);
-            text-align: right;
-            color: #454f60;
-            /* border-right: 1px solid #555; */
-            width: 40px;
-            padding-right: 8px;
-            margin-right: 8px;
-            display: inline-block;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
+        /*code > span.line:before, code > span.line > span.line:before {*/
+        /*    content: counter(line);*/
+        /*    text-align: right;*/
+        /*    color: #454f60;*/
+        /*    !* border-right: 1px solid #555; *!*/
+        /*    width: 40px;*/
+        /*    padding-right: 8px;*/
+        /*    margin-right: 8px;*/
+        /*    display: inline-block;*/
+        /*    -webkit-touch-callout: none;*/
+        /*    -webkit-user-select: none;*/
+        /*    -khtml-user-select: none;*/
+        /*    -moz-user-select: none;*/
+        /*    -ms-user-select: none;*/
+        /*    user-select: none;*/
+        /*}*/
 
-        code > span.focus:before {
-            color: #dadada;
-        }
+        /*code > span.focus:before {*/
+        /*    color: #dadada;*/
+        /*}*/
 
         .slide-menu-button {
             opacity: 0.1
@@ -80,13 +81,22 @@
             color: #818a91 !important;
         }
 
-        .code-500 > * > code {
-            max-height: 500px !important;
+        /*.code-500 > * > code {*/
+        /*    max-height: 500px !important;*/
+        /*}*/
+
+        .reveal .small ul {
+            font-size: 35px
         }
 
         .reveal li {
-            line-height: 1.15;
-            padding-bottom: 20px;
+            line-height: 1.35;
+            padding-bottom: 15px;
+        }
+
+        img {
+            width: 50%;
+            height: 50%;
         }
     </style>
 </head>
@@ -94,7 +104,12 @@
 
 <div class="reveal">
     <div class="slides">
-        <section data-markdown="slides/00-start/index.md" data-separator-vertical="^\+\+\+\n"/>
+        <section data-markdown="slides/00-start/index.md" data-separator-vertical="^\+\+\+\n"></section>
+        <section data-markdown="slides/01-state-problem/index.md" data-separator-vertical="^\+\+\+\n"></section>
+        <section data-markdown="slides/02-alternatives/index.md" data-separator-vertical="^\+\+\+\n"></section>
+        <section data-markdown="slides/03-requirements/index.md" data-separator-vertical="^\+\+\+\n"></section>
+        <section data-markdown="slides/04-model-solution/index.md" data-separator-vertical="^\+\+\+\n"></section>
+        <section data-markdown="slides/05-implementation/index.md" data-separator-vertical="^\+\+\+\n"></section>
     </div>
 </div>
 
@@ -150,14 +165,14 @@
 
         // https://github.com/denniskniep/reveal.js-plugin-spotlight
         spotlight: {
-            size: 60,
+            size: 250,
             toggleSpotlightOnMouseDown: true,
             presentingCursor: "initial", // change to "none"
             presentingCursorOnlyVisibleWhenSpotlightVisible: false
         },
 
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+        plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown]
     });
 </script>
 </body>
