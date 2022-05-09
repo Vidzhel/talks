@@ -5,7 +5,7 @@ Note:
 +++
 
 - Збір структурованих даних
-  - Інформація повинна мати однаковий формат у свіх місцях, наприклад Адреса <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Інформація повинна мати однаковий формат в усіх місцях, наприклад Адреса <!-- .element: class="fragment" data-fragment-index="1" -->
   - Введені дані повинні перевірятися на коректність <!-- .element: class="fragment" data-fragment-index="1" -->
 
 Note:
