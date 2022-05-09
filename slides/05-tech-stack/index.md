@@ -35,7 +35,7 @@
 
 <img src="/slides/05-tech-stack/protobuf_logo.png">
 
-## Protobuf по HTTP для обміну інформацією
+## [Protobuf](https://developers.google.com/protocol-buffers/docs/proto3) по HTTP для обміну інформацією
 
 Рефлексія типу повідомлень | Генерація DTOs для будь-якої мови | Перспектива переходу на gRPC
 
@@ -94,13 +94,13 @@ message GetUsersResponse {
 ### А тепер найцікавіше з цієї частини <!-- .element: class="red" -->
 ## Як нам перевіряти коректність документів?
 
-Як на етапі, коли користувач заповнює форму так і на сервері, наприклад при створенні документа чи оновленні реєстру
+На етапі, коли користувач заповнює форму так і на сервері, наприклад при створенні документа чи оновленні реєстру
 
 +++
 
 <img src="/slides/05-tech-stack/json_schema_logo.png">
 
-## JSON Schema
+## [JSON Schema](https://json-schema.org/draft/2020-12/json-schema-validation.html)
 
 Специфікація для JSON структур | Валідація
 
@@ -110,7 +110,7 @@ message GetUsersResponse {
 
 +++
 
-### Генерування форми з JSON Schema
+### Генерування форми з `JSON Schema`
 
 <img src="/slides/05-tech-stack/json_schema_form.jpg">
 
@@ -118,7 +118,7 @@ https://rjsf-team.github.io/react-jsonschema-form/
 
 +++
 
-### В перспективі JSON Schema
+### В перспективі `JSON Schema`
 
-- Додавання нових гнучких правил для валідації (залежить від реалізації специфікації)
+- Додавання нових гнучких правил для валідації [(залежить від реалізації специфікації)](https://ajv.js.org/keywords.html)
 - Можливість створення окремого сервісу для валідації, що буде перевикористовувати правила на сервері

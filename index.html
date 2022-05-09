@@ -73,10 +73,6 @@
             color: greenyellow !important;
         }
 
-        .apollo {
-            color: #15a4a2 !important;
-        }
-
         .gray, .grey {
             color: #818a91 !important;
         }
@@ -85,7 +81,7 @@
             max-height: 500px !important;
         }
 
-        .reveal .small ul {
+        .reveal .small ul ol {
             font-size: 35px
         }
 
@@ -94,9 +90,24 @@
             padding-bottom: 15px;
         }
 
+        .reveal :not(pre)>code {
+            border: 1px solid #9acd32;
+            background-color: #9acd3240;
+            border-radius: 10px;
+            padding: 0 10px;
+            text-transform: none;
+        }
+
         img {
             max-width: 50% !important;
             max-height: 50% !important;
+        }
+
+        .aside {
+            display: flex !important;
+            justify-content: center;
+            column-gap: 20px;
+            align-items: center;
         }
     </style>
 </head>
