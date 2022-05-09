@@ -28,7 +28,7 @@
 
 ## Інші ролі
 
-<img src="/slides/04-model-solution/roles.jpg">
+<img src="slides/04-model-solution/roles.jpg">
 
 +++
 
@@ -37,7 +37,7 @@
 +++
 #### кольорами позначено зв'язані контексти <br/> (<span class="orange">bounded contexts</span>)
 
-<img src="/slides/04-model-solution/domain.jpg">
+<img src="slides/04-model-solution/domain.jpg">
 
 
 

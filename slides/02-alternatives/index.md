@@ -6,7 +6,7 @@
 
 Найвідоміші представники: Google forms, Microsoft Forms
 
-<img src="/slides/02-alternatives/form-builder.png">
+<img src="slides/02-alternatives/form-builder.png">
 
 +++
 
@@ -20,7 +20,7 @@
 
 Найвідоміші представники: Microsoft Excel, Google Sheets, Airtable
 
-<img src="/slides/02-alternatives/airtable.png">
+<img src="slides/02-alternatives/airtable.png">
 
 +++
 
@@ -31,7 +31,7 @@
 
 ### Платформи 1C, WordPress
 
-<img  src="/slides/02-alternatives/wordpress.webp">
+<img  src="slides/02-alternatives/wordpress.webp">
 
 +++
 

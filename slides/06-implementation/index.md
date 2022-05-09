@@ -1,6 +1,6 @@
 ## Перша версія
 
-<img src="/slides/06-implementation/v1.jpg">
+<img src="slides/06-implementation/v1.jpg">
 
 +++
 
@@ -23,7 +23,7 @@
 
 ### SDK проєкт для спільного коду
 
-<img height="500px" src="/slides/06-implementation/service_sdk.jpg">
+<img height="500px" src="slides/06-implementation/service_sdk.jpg">
 
 +++
 
@@ -38,14 +38,14 @@
 4. Реалізація всіх інтерфейсів з інфраструктурними залежностями
 5. Місце підключення усіх залежностей, контроллерів, запуску додатка
 
-<img height="400px" src="/slides/06-implementation/hexagonal_architecture.jpg">
+<img height="400px" src="slides/06-implementation/hexagonal_architecture.jpg">
 
 +++
 
 ### CI/CD з допомогою `docker`, `docker-compose` та `github actions`
 
-<img src="/slides/06-implementation/github_actions.jpg">
-<img src="/slides/06-implementation/releases.jpg">
+<img src="slides/06-implementation/github_actions.jpg">
+<img src="slides/06-implementation/releases.jpg">
 
 +++
 
@@ -57,7 +57,7 @@
 
 Особливо добре проглядається на більшій кількості сервісів
 
-<img src="/slides/06-implementation/dependency_hell.jpg">
+<img src="slides/06-implementation/dependency_hell.jpg">
 
 Приклад
 
@@ -71,7 +71,7 @@
 - Protobuf over Rabbit Mq
 - Івенти зберігаються локально, після чого відправляються cron джобою що запускається кожні декілька секунд
 
-<img src="/slides/06-implementation/v2.jpg" width="500px">
+<img src="slides/06-implementation/v2.jpg" width="500px">
 
 </div>
 
@@ -80,7 +80,7 @@
 #### Покращена робота з БД <!-- .element: class="green" -->
 ### Forward only підхід мігрування </br> з автоматичним накатуванням при старті
 
-<img src="/slides/06-implementation/migrations.jpg">
+<img src="slides/06-implementation/migrations.jpg">
 
 - Знаємо яка версія
 - Автоматично виконуємо міграцію
@@ -96,7 +96,7 @@
 - Гнучкість query builder по зрівнянню з топорнісю ORM, особливо для golang (вони не полюбляють таке)
 - Type safety
 
-<img src="/slides/06-implementation/query_builder.jpg">
+<img src="slides/06-implementation/query_builder.jpg">
 
 </div>
 

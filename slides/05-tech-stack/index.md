@@ -16,7 +16,7 @@
 
 ### Як і завжди є трейдофи
 
-<img src="/slides/05-tech-stack/microservice-tradeoffs-fowler.jpg">
+<img src="slides/05-tech-stack/microservice-tradeoffs-fowler.jpg">
 
 +++
 
@@ -33,7 +33,7 @@
 
 +++
 
-<img src="/slides/05-tech-stack/protobuf_logo.png">
+<img src="slides/05-tech-stack/protobuf_logo.png">
 
 ## [Protobuf](https://developers.google.com/protocol-buffers/docs/proto3) по HTTP для обміну інформацією
 
@@ -98,7 +98,7 @@ message GetUsersResponse {
 
 +++
 
-<img src="/slides/05-tech-stack/json_schema_logo.png">
+<img src="slides/05-tech-stack/json_schema_logo.png">
 
 ## [JSON Schema](https://json-schema.org/draft/2020-12/json-schema-validation.html)
 
@@ -106,13 +106,13 @@ message GetUsersResponse {
 
 +++
 
-<img src="/slides/05-tech-stack/json_schema_example.jpg">
+<img src="slides/05-tech-stack/json_schema_example.jpg">
 
 +++
 
 ### Генерування форми з `JSON Schema`
 
-<img src="/slides/05-tech-stack/json_schema_form.jpg">
+<img src="slides/05-tech-stack/json_schema_form.jpg">
 
 https://rjsf-team.github.io/react-jsonschema-form/
 
