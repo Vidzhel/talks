@@ -5,26 +5,26 @@ Note:
 +++
 
 - Збір структурованих даних
-  - Інформація повинна мати однаковий формат в усіх місцях, наприклад Адреса <!-- .element: class="fragment" data-fragment-index="1" -->
-  - Введені дані повинні перевірятися на коректність <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Інформація повинна мати однаковий формат в усіх місцях, наприклад Адреса
+  - Введені дані повинні перевірятися на коректність
 
 Note:
 <img height="60%" src="slides/01-state-problem/note_why.jpg">
 +++
 
 - Ревізія та редагування зібраної інформації
-  - Редагування зібраної інформації <!-- .element: class="fragment" data-fragment-index="1" -->
-  - Історія дій користувачів <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Редагування зібраної інформації
+  - Історія дій користувачів
 
 Note:
 <img height="60%" src="slides/01-state-problem/note_why.jpg">
 +++
 
 - Контроль над зібраними даними
-  - Розгортання на потужностях підприємства <!-- .element: class="fragment" data-fragment-index="1" -->
-  - Ієрархічна система ролей <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Розгортання на потужностях підприємства
+  - Ієрархічна система ролей
   - Розділення на групи користувачів для більш гнучкого контролю
-    доступу <!-- .element: class="fragment" data-fragment-index="1" -->
+    доступу
 
 Note:
 <img height="60%" src="slides/01-state-problem/note_why.jpg">

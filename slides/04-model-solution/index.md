@@ -46,7 +46,7 @@ Note:
 <img height="60%" src="slides/04-model-solution/domain.jpg">
 +++
 
-## Вийшло змодулювати наступний домен
+## Вийшло змоделювати наступний домен
 
 Note:
 <img height="60%" src="slides/04-model-solution/domain.jpg">

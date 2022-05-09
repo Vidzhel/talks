@@ -7,12 +7,15 @@ Note:
 
 ### За архітектурний принцип обрано <span data-id="text" >мікросервіси</span>
 
+<img height="60%" src="slides/05-tech-stack/microservices.jpg" data-id="image">
+
 Note:
 <img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 <!-- .slide: data-auto-animate data-auto-animate-duration="0.3" -->
 
 ### За архітектурний принцип обрано <span data-id="text" class="red">мікросервіси</span>
+<img height="0" src="slides/05-tech-stack/microservices.jpg" data-id="image">
 
 ### ... Чому?
 

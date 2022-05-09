@@ -81,7 +81,7 @@ Note:
 <img height="60%" src="slides/06-implementation/v2_note.jpg">
 +++
 
-### шляхом використання event-driven підходу <!-- .element: class="green" -->
+### ...шляхом використання event-driven підходу <!-- .element: class="green" -->
 
 <div class="aside">
 
