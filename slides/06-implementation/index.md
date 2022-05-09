@@ -2,6 +2,8 @@
 
 <img src="slides/06-implementation/v1.jpg">
 
+Note:
+<img width="100%" src="slides/06-implementation/v1_note.jpg">
 +++
 
 #### Рефлексія <!-- .element: class="grey" -->
@@ -13,22 +15,30 @@
 - Чисто SQL підхід до роботи з базою (міграції та самі SQL запити)
 - Писання стабів для тестування вручну, замість використання генератора моків
 
+Note:
+<img width="100%" src="slides/06-implementation/v1_note.jpg">
 +++
 
 #### Рефлексія <!-- .element: class="grey" -->
 
 ### Успішні рішення <!-- .element: class="green" -->
 
+Note:
+<img width="100%" src="slides/06-implementation/v1_note.jpg">
 +++
 
 ### SDK проєкт для спільного коду
 
 <img height="500px" src="slides/06-implementation/service_sdk.jpg">
 
+Note:
+<img width="100%" src="slides/06-implementation/v1_note.jpg">
 +++
 
 ### Hexagonal architecture - допомогла в рефакторингах
 
+Note:
+<img width="100%" src="slides/06-implementation/v1_note.jpg">
 +++
 <!-- .slide: class="aside" -->
 
@@ -40,6 +50,8 @@
 
 <img height="400px" src="slides/06-implementation/hexagonal_architecture.jpg">
 
+Note:
+<img width="100%" src="slides/06-implementation/v1_note.jpg">
 +++
 
 ### CI/CD з допомогою `docker`, `docker-compose` та `github actions`
@@ -47,10 +59,14 @@
 <img src="slides/06-implementation/github_actions.jpg">
 <img src="slides/06-implementation/releases.jpg">
 
+Note:
+<img width="100%" src="slides/06-implementation/v1_note.jpg">
 +++
 
 ## Друга версія
 
+Note:
+<img height="60%" src="slides/06-implementation/v2_note.jpg">
 +++
 
 ### Розв'язання проблеми з залежностями... <!-- .element: class="green" -->
@@ -61,6 +77,8 @@
 
 Приклад
 
+Note:
+<img height="60%" src="slides/06-implementation/v2_note.jpg">
 +++
 
 ### шляхом використання event-driven підходу <!-- .element: class="green" -->
@@ -75,6 +93,8 @@
 
 </div>
 
+Note:
+<img height="60%" src="slides/06-implementation/v2_note.jpg">
 +++
 
 #### Покращена робота з БД <!-- .element: class="green" -->
@@ -85,6 +105,8 @@
 - Знаємо яка версія
 - Автоматично виконуємо міграцію
 
+Note:
+<img height="60%" src="slides/06-implementation/v2_note.jpg">
 +++
 
 #### Покращена робота з БД <!-- .element: class="green" -->
@@ -99,4 +121,7 @@
 <img src="slides/06-implementation/query_builder.jpg">
 
 </div>
+
+Note:
+<img height="60%" src="slides/06-implementation/v2_note.jpg">
 

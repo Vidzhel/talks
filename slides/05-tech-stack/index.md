@@ -1,10 +1,14 @@
 ## Програмна реалізація
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 <!-- .slide: data-auto-animate data-auto-animate-duration="0.3" -->
 
 ### За архітектурний принцип обрано <span data-id="text" >мікросервіси</span>
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 <!-- .slide: data-auto-animate data-auto-animate-duration="0.3" -->
 
@@ -12,18 +16,24 @@
 
 ### ... Чому?
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 
 ### Як і завжди є трейдофи
 
 <img src="slides/05-tech-stack/microservice-tradeoffs-fowler.jpg">
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 
 - Складність в налагоджені інфраструктури
 - Проблема налагодження комунікації (залежності сервісів один від одного)
 - Простота в розширені та масштабуванні
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 
 ### Golang для написання серверної частини
@@ -31,6 +41,8 @@
 - Простий у вивчені
 - Підходить для написання легковісних сервісів
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 
 <img src="slides/05-tech-stack/protobuf_logo.png">
@@ -39,6 +51,8 @@
 
 Рефлексія типу повідомлень | Генерація DTOs для будь-якої мови | Перспектива переходу на gRPC
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 
 ### Структура кожного запиту
@@ -63,6 +77,8 @@ message GetUsersRequest {
 }
 ```
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 
 ```protobuf[|2-5|7-10]
@@ -79,15 +95,21 @@ message GetUsersResponse {
 }
 ```
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 
 ### React для фронтенду
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 <!-- .slide: data-auto-animate  -->
 
 ### А тепер найцікавіше з цієї частини
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 <!-- .slide: data-auto-animate  -->
 
@@ -96,6 +118,8 @@ message GetUsersResponse {
 
 На етапі, коли користувач заповнює форму так і на сервері, наприклад при створенні документа чи оновленні реєстру
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 
 <img src="slides/05-tech-stack/json_schema_logo.png">
@@ -104,10 +128,14 @@ message GetUsersResponse {
 
 Специфікація для JSON структур | Валідація
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 
 <img src="slides/05-tech-stack/json_schema_example.jpg">
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 
 ### Генерування форми з `JSON Schema`
@@ -116,9 +144,14 @@ message GetUsersResponse {
 
 https://rjsf-team.github.io/react-jsonschema-form/
 
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 
 ### В перспективі `JSON Schema`
 
 - Додавання нових гнучких правил для валідації [(залежить від реалізації специфікації)](https://ajv.js.org/keywords.html)
 - Можливість створення окремого сервісу для валідації, що буде перевикористовувати правила на сервері
+
+Note:
+<img height="60%" src="slides/05-tech-stack/note.jpg">
