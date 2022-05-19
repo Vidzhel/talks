@@ -7,7 +7,7 @@ Note:
 
 ### За архітектурний принцип обрано <span data-id="text" >мікросервіси</span>
 
-<img height="60%" src="..ervices.jpg" data-id="image">
+<img height="60%" src="/slides/05-tech-stack/microservices.jpg" data-id="image">
 
 Note:
 <img height="60%" src="slides/05-tech-stack/note.jpg">
@@ -15,7 +15,7 @@ Note:
 <!-- .slide: data-auto-animate data-auto-animate-duration="0.3" -->
 
 ### За архітектурний принцип обрано <span data-id="text" class="red">мікросервіси</span>
-<img height="0" src="..ervices.jpg" data-id="image">
+<img height="0" src="/slides/05-tech-stack/microservices.jpg" data-id="image">
 
 ### ... Чому?
 
@@ -25,7 +25,7 @@ Note:
 
 ### Як і завжди є трейдофи
 
-<img src="..ervice-tradeoffs-fowler.jpg">
+<img src="/slides/05-tech-stack/microservice-tradeoffs-fowler.jpg">
 
 Note:
 <img height="60%" src="slides/05-tech-stack/note.jpg">
@@ -48,7 +48,7 @@ Note:
 <img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 
-<img src="..uf_logo.png">
+<img src="/slides/05-tech-stack/protobuf_logo.png">
 
 ## [Protobuf](https://developers.google.com/protocol-buffers/docs/proto3) по HTTP для обміну інформацією
 
@@ -125,7 +125,7 @@ Note:
 <img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 
-<img src="..chema_logo.png">
+<img src="/slides/05-tech-stack/json_schema_logo.png">
 
 ## [JSON Schema](https://json-schema.org/draft/2020-12/json-schema-validation.html)
 
@@ -135,7 +135,7 @@ Note:
 <img height="60%" src="slides/05-tech-stack/note.jpg">
 +++
 
-<img src="..chema_example.jpg">
+<img src="/slides/05-tech-stack/json_schema_example.jpg">
 
 Note:
 <img height="60%" src="slides/05-tech-stack/note.jpg">
@@ -143,7 +143,7 @@ Note:
 
 ### Генерування форми з `JSON Schema`
 
-<img src="..chema_form.jpg">
+<img src="/slides/05-tech-stack/json_schema_form.jpg">
 
 https://rjsf-team.github.io/react-jsonschema-form/
 

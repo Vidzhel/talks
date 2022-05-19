@@ -40,7 +40,7 @@ Note:
 
 ## Інші ролі
 
-<img src="..jpg">
+<img src="/slides/04-model-solution/roles.jpg">
 
 Note:
 <img height="60%" src="slides/04-model-solution/domain.jpg">
@@ -53,7 +53,7 @@ Note:
 +++
 #### кольорами позначено зв'язані контексти <br/> (<span class="orange">bounded contexts</span>)
 
-<img src="...jpg">
+<img src="/slides/04-model-solution/domain.jpg">
 
 Note:
 <img height="60%" src="slides/04-model-solution/domain.jpg">

@@ -1,6 +1,6 @@
 ## Перша версія
 
-<img src="..">
+<img src="/slides/06-implementation/v1.jpg">
 
 Note:
 <img width="100%" src="slides/06-implementation/v1_note.jpg">
@@ -29,7 +29,7 @@ Note:
 
 ### SDK проєкт для спільного коду
 
-<img height="500px" src="..e_sdk.jpg">
+<img height="500px" src="/slides/06-implementation/service_sdk.jpg">
 
 Note:
 <img width="100%" src="slides/06-implementation/v1_note.jpg">
@@ -48,7 +48,7 @@ Note:
 4. Реалізація всіх інтерфейсів з інфраструктурними залежностями
 5. Місце підключення усіх залежностей, контроллерів, запуску додатка
 
-<img height="400px" src="..nal_architecture.jpg">
+<img height="400px" src="/slides/06-implementation/hexagonal_architecture.jpg">
 
 Note:
 <img width="100%" src="slides/06-implementation/v1_note.jpg">
@@ -56,8 +56,8 @@ Note:
 
 ### CI/CD з допомогою `docker`, `docker-compose` та `github actions`
 
-<img src=".._actions.jpg">
-<img src="..es.jpg">
+<img src="/slides/06-implementation/github_actions.jpg">
+<img src="/slides/06-implementation/releases.jpg">
 
 Note:
 <img width="100%" src="slides/06-implementation/v1_note.jpg">
@@ -73,7 +73,7 @@ Note:
 
 Особливо добре проглядається на більшій кількості сервісів
 
-<img src="..ency_hell.jpg">
+<img src="/slides/06-implementation/dependency_hell.jpg">
 
 Приклад
 
@@ -89,7 +89,7 @@ Note:
 - Protobuf over Rabbit Mq
 - Івенти зберігаються локально, після чого відправляються cron джобою що запускається кожні декілька секунд
 
-<img src=".." width="500px">
+<img src="/slides/06-implementation/v2.jpg" width="500px">
 
 </div>
 
@@ -100,7 +100,7 @@ Note:
 #### Покращена робота з БД <!-- .element: class="green" -->
 ### Forward only підхід мігрування </br> з автоматичним накатуванням при старті
 
-<img src="..ions.jpg">
+<img src="/slides/06-implementation/migrations.jpg">
 
 - Знаємо яка версія
 - Автоматично виконуємо міграцію
@@ -118,7 +118,7 @@ Note:
 - Гнучкість query builder по зрівнянню з топорнісю ORM, особливо для golang (вони не полюбляють таке)
 - Type safety
 
-<img src="..builder.jpg">
+<img src="/slides/06-implementation/query_builder.jpg">
 
 </div>
 
