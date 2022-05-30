@@ -354,7 +354,8 @@ func SumNumbers[K comparable, V Number](m map[K]V) V {
 }
 ```
 
-[Методи не можуть декларувати змінні типи (Go playground)](https://go.dev/play/p/JQSScOOUPXG?v=gotip)
+[Методи не можуть декларувати змінні типи (Go playground)](https://go.dev/play/p/JQSScOOUPXG?v=gotip)</br>
+[Немає варіативності типів (Generic type variance)](https://go.dev/play/p/-cTavIeVV4U)
 
 Notes:
 
