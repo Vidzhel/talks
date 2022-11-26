@@ -215,7 +215,7 @@ Notes:
 
 ## The lurking problem
 
-### Only can achieve agility when the coupling is minimal <!-- .element: class="red" -->
+### One only can achieve agility when the coupling is minimal <!-- .element: class="red" -->
 
 Notes:
 - the most important part of the talk
@@ -331,9 +331,12 @@ Notes:
 
 +++
 
-![Untitled](./slides/00-start/mess-without-constraints.png) 
+![Untitled](./slides/00-start/mess-without-constraints.png)
 
 Notes:
 - coupling crosses all the concepts, not only microservices
 - without constraints, coupling introduced easily
 - physical boundary in Dist sys. - less prone
+
++++
+
