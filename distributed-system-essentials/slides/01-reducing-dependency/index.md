@@ -166,10 +166,115 @@ Notes:
 - It provides the map for action
   - where to use complex technology or modeling approaches like DDD, Event sourcing
     - have benefits but introduce too much complexity
-    - No point in DDD for a CRUD
+    - No point in DDD for a CRUD,
+    - But complex algorithms, validation rules, business rules or invariants requires the approaches
     - With accidental complexity we only complicate life
-  - where to invest time or it's better to just buy (authentication)
+  - where to invest time, or it's better to just buy (authentication)
 
 +++
 
-### Identify subdomain
+### How data influences bounded context
+
+Notes:
+- can't always feature work without some data
+- once independent units become chatty
+- wrong context - may be a reason
+- other heuristics:
+  - consistency control - two processes have to run one at a time
+  - linearizability - reading the last write which cause synchronous take place
+  - tolerance to eventual consistency - may be split
+
++++
+
+### Interactions between BCs
+
+![Untitled](./slides/01-reducing-dependency/bounded-cotext-relations.png) <!-- .element: class="big-image" -->
+
+Notes:
+- interesting things happen not in bounded context but between them
+- problem in one context must not cause global issue
+- context map used for logical relations between BCs:
+  - conform:
+    - accept language of other BC. 
+    - Change with it. 
+    - Can conform to multiple context unless collision in notions (e.g. User)
+    - Git visual tools - some embrace git specifics while other, make abstraction
+  - partner:
+    - both context understand messages, domain language. 
+    - Collaboration between teams, which is sometimes useful
+  - anti corruption layer into:
+    - separate component - translator
+    - may be larger that our system
+    - to separate subdomains, third party dependencies, decouple legacy monolith
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Interactions between teams
+
+Notes:
+- interaction between teams are inevitable
+- can halt dev process unless coordinated consciously
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Interactions between teams <!-- .element: class="orange" -->
+## Collaboration
+
+![Untitled](./slides/01-reducing-dependency/teams-collaboration.png) 
+
+Notes:
+- used when exploring core domains
+- boundaries aren't clear
+- one team may not have sufficient know-how
+- teams work closely together
+- domain should be broken into services later
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Interactions between teams <!-- .element: class="orange" -->
+## X as a Service
+
+![Untitled](./slides/01-reducing-dependency/x-as-service.png) 
+
+Notes:
+- used after research is done, boundaries are clear
+- to speed up the dev process
+- one team develops service for another
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Interactions between teams <!-- .element: class="orange" -->
+## Facilitation
+
+Notes:
+- one team supports services other depends upon
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Interactions between teams <!-- .element: class="orange" -->
+## Evolutionary patterns
+
+![Untitled](./slides/01-reducing-dependency/teams-collaboration-evolution.png) 
+
+Notes:
+- teams are more flexible than app architecture
+- can be used to create temporary teams:
+  - for experimentation
+  - more people between teams to get wider ivew
+
++++
+
+### Modeling techniques and examples
+
+- Domain storytelling - helps in understanding the bigger picture
+- Event storming - helps in reiterating boundaries, extensive modeling
+- [The Art of Discovering Bounded Contexts by Nick Tune](https://www.youtube.com/watch?v=ez9GWESKG4I)
+- [Practical DDD: Bounded Contexts + Events = Microservices](https://www.youtube.com/watch?v=Ab5-ebHja3o)
+- [Find Context Boundaries with Domain Storytelling - Stefan Hofer and Henning Schwenter - DDDEU 18](https://www.youtube.com/watch?v=Y1ykXnl6r7s)
+
+
