@@ -291,3 +291,7 @@ Notes:
   - upsert - always idempotent
   - if it's just state, or domain event like user added - usually not idempotent
 - can be solved by saving list of handled request ids for some period
+
++++
+
+## Questions?

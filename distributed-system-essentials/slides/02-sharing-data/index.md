@@ -168,3 +168,7 @@ Notes:
 - event is dummy, no meaning, just upsert or delete
 - ideal for updating read views (caches) - must not be done in single transaction
 - usually, database log is read to create events
+
++++
+
+## Questions?

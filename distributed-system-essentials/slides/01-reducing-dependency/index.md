@@ -19,7 +19,9 @@ Notes:
 
 ## How to decompose
 
-“There are many useful and revealing heuristics for defining the boundaries of service. Size is one of the least useful.” - Nick Tune 
+> There are many useful and revealing heuristics for defining the boundaries of service. Size is one of the least useful.
+ 
+Nick Tune 
 
 Notes:
 - cohesion as the guideline, not granularity, size
@@ -277,4 +279,6 @@ Notes:
 - [Practical DDD: Bounded Contexts + Events = Microservices](https://www.youtube.com/watch?v=Ab5-ebHja3o)
 - [Find Context Boundaries with Domain Storytelling - Stefan Hofer and Henning Schwenter - DDDEU 18](https://www.youtube.com/watch?v=Y1ykXnl6r7s)
 
++++
 
+## Questions?

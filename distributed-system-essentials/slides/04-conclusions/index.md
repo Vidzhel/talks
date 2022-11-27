@@ -37,7 +37,10 @@ Notes:
 - Aggregates modeling - beating local complexity by modeling tailor made entities
 
 Notes:
-- publication is coming who knows when, review process
+- publication is coming who knows when, 
+  - long review process
+  - references to sources used
+  - may request it? I'll think about it
 - relative topics:
   - observability
   - dependencies tracking
