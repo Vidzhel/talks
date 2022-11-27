@@ -267,17 +267,108 @@ Notes:
 - teams are more flexible than app architecture
 - can be used to create temporary teams:
   - for experimentation
-  - more people between teams to get wider ivew
+  - more people between teams to get wider view
 
 +++
 
-### Modeling techniques and examples
+### Modeling techniques
 
 - Domain storytelling - helps in understanding the bigger picture
 - Event storming - helps in reiterating boundaries, extensive modeling
 - [The Art of Discovering Bounded Contexts by Nick Tune](https://www.youtube.com/watch?v=ez9GWESKG4I)
 - [Practical DDD: Bounded Contexts + Events = Microservices](https://www.youtube.com/watch?v=Ab5-ebHja3o)
 - [Find Context Boundaries with Domain Storytelling - Stefan Hofer and Henning Schwenter - DDDEU 18](https://www.youtube.com/watch?v=Y1ykXnl6r7s)
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Examples
+
+Notes:
+- editor service - monolith
+- contains many use cases that are coupled by the way we implement them
+- entities become bags with data aggregating many use cases
+- they're too broad, they're anemic
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Examples <!-- .element: class="orange" -->
+### Anemic domain models 
+
+![Untitled](./slides/01-reducing-dependency/anemic-models-problem.png)
+
+Notes:
+- example - Material entity
+- it contains "common" parts between Courses and Resources
+- Problem is, from domain point of view, resource and courses become deviate more and more
+- Resources is to be micro-learning
+- It doesn't have questions, sections only content
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Examples <!-- .element: class="orange" -->
+### Anemic domain models
+
+- basic information (title, cover picture...)
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Examples <!-- .element: class="orange" -->
+### Anemic domain models
+
+- basic information (title, cover picture...)
+- publishing
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Examples <!-- .element: class="orange" -->
+### Anemic domain models
+
+- basic information (title, cover picture...)
+- publishing
+- access settings (collaboration, groups)
+- ...
+
+Notes:
+- has to be changed when use cases change
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Examples <!-- .element: class="orange" -->
+### Dependency on the storage
+
+Notes:
+- we are using EF core model as an entity
+- we are using ORM models that is mapped to table as entity
+- even though EF Core provides Fluent API, not to write db related staff in models
+  - doesn't help if we want multiple models for the same table
+  - puts constraints on how we model entities
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Examples <!-- .element: class="orange" -->
+### Separation of concerns
+
+![Untitled](./slides/01-reducing-dependency/separation-of-concerns.png)
+
+Notes:
+- I'd argue a better approach would be
+- use models as models, not entities
+- use repositories to retrieve models using EF Core and map to entities
+- create specific entities to solve particular problem
+- move logic from services back to entities
+- will allow:
+  - use different storages for task at hand
+    - material access, graph db instead of heavy queries
+  - separation of context into separate units
+  - less conflicts
+  - more people to work on the core domain
 
 +++
 

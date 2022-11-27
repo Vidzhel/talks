@@ -294,4 +294,53 @@ Notes:
 
 +++
 
+### Example
+
+Notes:
+- as per examples
+- good: media library service uses the concept of reserving
+  - reserves space before file upload, receives link to bucket
+- bad: 
+  - notification and mailer service dependency
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Example <!-- .element: class="orange" -->
+### Notifications service dependency problem
+
+![Untitled](./slides/03-communication/notification-service-queues.png)
+
+Notes:
+- both, notification and mailer are generic subdomains
+- depend on many other service
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Example <!-- .element: class="orange" -->
+### Notifications service dependency problem
+
+![Untitled](./slides/03-communication/notification-service-dependencies.png)
+
+Notes:
+- depend on the events
+- events change - those change as well
+
++++
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
+
+### Example <!-- .element: class="orange" -->
+### Notifications service dependency problem
+
+![Untitled](./slides/03-communication/notification-service-di.png)
+
+Notes:
+- I'd argue that we need to reverse the dependency
+- notification service has to provide endpoint to send the email
+- introduction of anti-corruption layer, handles events to send email request
+- each context now responsible for email templates
+
++++
+
 ## Questions?

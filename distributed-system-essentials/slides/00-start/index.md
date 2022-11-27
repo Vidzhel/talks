@@ -1,6 +1,9 @@
 ### If (domain logic) then (solution) <!-- .element: class="orange" -->
 ## Distributed systems essentials
 
+Notes:
+- Hold your keyboards, because this will be a lot of information to handle
+
 +++
 
 ## What are *microservices*
