@@ -6,24 +6,6 @@ Notes:
 - couples the components, though
 
 +++
-
-### The purpose of sharing is driven by the business
-
-![Untitled](./slides/02-sharing-data/cap-theorem.png) 
-
-Notes:
-- data may used for:
-  - simple check (permissions)
-  - produce derivatives (analytics)
-- some parts
-  - need strong consistency (free space during file upload)
-  - other tolerate eventual consistency, for better availability
-  - one or another, as stated by CAP theorem
-  - no way to build strongly consistent always available system
-  - when strong consistency requirement - must go in single context
-- ask domain expert how to handle individual situation (is it ok if user uses enterprise feature right after the plan expiration?)
-
-+++
 <!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
 
 ### Data ownership
@@ -65,6 +47,24 @@ Notes:
 - instead, shopping card is behaviour
 - different contexts are responsible for its functionality
 - it's not noun driven development
+
++++
+
+### The purpose of sharing is driven by the business
+
+![Untitled](./slides/02-sharing-data/cap-theorem.png)
+
+Notes:
+- data may used for:
+  - simple check (permissions)
+  - produce derivatives (analytics)
+- some parts
+  - need strong consistency (free space during file upload)
+  - other tolerate eventual consistency, for better availability
+  - one or another, as stated by CAP theorem
+  - no way to build strongly consistent always available system
+  - when strong consistency requirement - must go in single context
+- ask domain expert how to handle individual situation (is it ok if user uses enterprise feature right after the plan expiration?)
 
 +++
 <!-- .slide: data-auto-animate data-auto-animate-duration="0.5" data-auto-animate-restart -->

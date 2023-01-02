@@ -10,7 +10,7 @@ Notes:
 ![Untitled](./slides/01-reducing-dependency/microservices-api-balance.png) <!-- .element: class="big-image" -->
 
 Notes:
-- boundary - service that introduces boundary
+- in services, boundary is API exposed
 - balance between integration API and domain
 - isn't one shot process, especially at the beginning
 - monolith is crucial at the beginning, quickly iterate
@@ -49,8 +49,8 @@ Notes:
 ![Untitled](./slides/01-reducing-dependency/three-legged-run.png)
 
 Notes:
-- goal is to make the unit
-- autonomous, available, independent
+- goal is to make the unit:
+  - autonomous, available, independent
 - it's easier to locate error, extend
 - no strong dependency between context
 - a team is responsible for one or a couple of BCs
@@ -64,7 +64,7 @@ Notes:
 ![Untitled](./slides/01-reducing-dependency/amazon-decomposed.png)
 
 Notes:
-- split depending on fun relation and behaviour
+- split depending on the relation and behaviour
 - span across all layers from data to view 
   - usage of micro frontends
 - do not split by tech requirement like:
@@ -72,6 +72,21 @@ Notes:
   - type of process (long-running or not)
   - similar to how project is structured 
 - to insure absence of collisions between teams
+
++++
+
+### Domain language as a hint
+
+![Untitled](./slides/01-reducing-dependency/domain-language-as-hint.png) <!-- .element: class="big-image" -->
+
+Notes:
+- we may have a user entity
+- used for diff purposes and have diff data
+  - billing info for billing context
+  - shipping address for shipping context
+  - lead in marketing context
+- different rules are present, separation is required
+- refer to the example with Materials and support
 
 +++
 
@@ -88,20 +103,6 @@ Notes:
 - org structure changes under discoveries, update BCs and team structures
 - prevent cross-context teams
 
-+++
-
-### Domain language as a hint
-
-![Untitled](./slides/01-reducing-dependency/domain-language-as-hint.png) <!-- .element: class="big-image" -->
-
-Notes:
-- we may have a user entity
-- used for diff purposes and have diff data
-  - billing info for billing context
-  - shipping address for shipping context
-  - lead in marketing context
-- different rules are present, separation is required
-- refer to the example with Materials and support
 
 +++
 <!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->

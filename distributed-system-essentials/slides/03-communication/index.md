@@ -268,7 +268,7 @@ Notes:
 ### Relation between events and commands in terms of dependency <!-- .element: class="orange" -->
 ## Wrong usage of events 
 
-![Untitled](./slides/03-communication/commands-events-dependency.png)
+![Untitled](./slides/03-communication/wrong-events-usage.png)
 
 +++
 <!-- .slide: data-auto-animate data-auto-animate-duration="0.5" -->
