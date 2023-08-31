@@ -1,0 +1,9 @@
+{
+  "version": "0.0.1",
+  "name": "docdb-index-optimization",
+  "private": true,
+  "description": "Differences between MongoDB and Amazon Document DB in terms of indexes. How to debug and solve problems with indexes",
+  "scripts": {
+    "start": "./reveal.js/node_modules/.bin/gulp --cwd . -f ./reveal.js/gulpfile.js serve"
+  }
+}

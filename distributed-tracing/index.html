@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Presentation</title>
+
+    <link rel="stylesheet" href="reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="reveal.js/dist/theme/blood.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="reveal.js/lib/css/atom-one-dark.css"/>
+<!--    <link rel="stylesheet" href="reveal.js/plugin/highlight/zenburn.css"/>-->
+
+    <style>
+        .line {
+            display: block;
+        }
+
+        .line.focus {
+            background: #fdf6e3;
+            color: #657b83;
+        }
+
+        .line.focus .hljs-comment, .line.focus .hljs-quote {
+            color: #93a1a1;
+        }
+
+        code {
+            counter-reset: line;
+        }
+
+        code > span.line, code > span.line > span.line {
+            counter-increment: line;
+        }
+
+        code > span.line:before, code > span.line > span.line:before {
+            content: counter(line);
+            text-align: right;
+            color: #454f60;
+            /* border-right: 1px solid #555; */
+            width: 40px;
+            padding-right: 8px;
+            margin-right: 8px;
+            display: inline-block;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        code > span.focus:before {
+            color: #dadada;
+        }
+
+        .slide-menu-button {
+            opacity: 0.1
+        }
+
+        .red {
+            color: tomato !important;
+        }
+
+        .orange {
+            color: darkorange !important;
+        }
+
+        .green {
+            color: greenyellow !important;
+        }
+
+        .gray, .grey {
+            color: #818a91 !important;
+        }
+
+        .code-500 > * > code {
+            max-height: 500px !important;
+        }
+
+        .small-list ul, .small-list ol {
+            font-size: 1.8rem;
+        }
+
+        .reveal li {
+            line-height: 1.35;
+            padding-bottom: 15px;
+        }
+
+        .reveal :not(pre)>code {
+            border: 1px solid #9acd32;
+            background-color: #9acd3240;
+            border-radius: 10px;
+            padding: 0 10px;
+            text-transform: none;
+        }
+        .reveal img, .reveal video, .reveal iframe {
+            max-width: 50%;
+            max-height: 50%;
+        }
+        .reveal img.big-image {
+            max-width: 100%;
+            max-height: 100%;
+            width: 75%;
+        }
+
+        .aside {
+            display: flex !important;
+            justify-content: center;
+            column-gap: 20px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="reveal" class="reveal">
+    <div class="slides">
+        <section data-markdown="slides/00-start/index.md" data-separator-vertical="^\+\+\+\n"></section>
+    </div>
+</div>
+
+<script src="reveal.js/dist/reveal.js"></script>
+<script src="reveal.js/plugin/zoom/zoom.js"></script>
+<script src="reveal.js/plugin/notes/notes.js"></script>
+<script src="reveal.js/plugin/search/search.js"></script>
+<script src="reveal.js/plugin/markdown/markdown.js"></script>
+<script src="reveal.js/plugin/highlight/highlight.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        dependencies: [
+            { src: 'reveal.js/plugin/spotlight.js'},
+        ],
+
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        totalTime: 15 * 60,
+        width: 1280,
+        height: 720,
+
+        slideNumber: true,
+        showSlideNumber: 'all',
+        keyboard: {
+            13: function () { // pause/resume time when Enter is pressed
+                ElapsedTimeBar.isPaused ? ElapsedTimeBar.resume() : ElapsedTimeBar.pause();
+            },
+            82: function () { // reset timer when 'r' is pressed
+                ElapsedTimeBar.reset();
+            },
+            37: function () { // left
+                Reveal.isOverview() ? Reveal.navigateLeft() : Reveal.navigatePrev();
+            },
+            39: function () { // right
+                Reveal.isOverview() ? Reveal.navigateRight() : Reveal.navigateNext();
+            },
+            38: function () { // up
+                Reveal.isOverview() ? Reveal.navigateUp() : Reveal.navigatePrev();
+            },
+            40: function () { // down
+                Reveal.isOverview() ? Reveal.navigateDown() : Reveal.navigateNext();
+            },
+            33: 'navigatePrev', // page up
+            34: 'navigateNext', // page down
+            36: 'navigatePrev', // home
+            35: 'navigateNext', // end
+        },
+
+        // https://github.com/denniskniep/reveal.js-plugin-spotlight
+        spotlight: {
+            size: 250,
+            toggleSpotlightOnMouseDown: false,
+            presentingCursor: "initial", // change to "none"
+            presentingCursorOnlyVisibleWhenSpotlightVisible: false
+        },
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+    });
+
+    Reveal.on('ready', () => {
+        const indexes = Reveal.getIndices();
+        if (indexes.h === 0 && indexes.v === 0) {
+            document.getElementById("reveal").classList.add("show-gopher");
+        }
+    });
+
+    Reveal.on('slidechanged', event => {
+        const container = document.getElementById("reveal")
+        if (event.indexh === 0 && event.indexv === 0) {
+            container.classList.add("show-gopher");
+        } else {
+            container.classList.remove("show-gopher");
+        }
+    } );
+</script>
+</body>
+</html>

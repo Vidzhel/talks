@@ -37,6 +37,8 @@ Computing Foundation (CNCF) officially accepted OpenTracing in 2016.
 - Trace: A Complete Request Link
 - Span: A Call Procedure
 
+![](https://opentelemetry.io/img/waterfall-trace.svg)
+
 The system has a logical unit with start time and execution duration and contains multiple states.
 Each span encapsulates the following states:
 
@@ -122,7 +124,7 @@ When answering the previous question, let's look at the troubleshooting process 
 - Query and analyze the exception module and associated logs to find the core error information (Logs)
 - Locate the code causing the problem with detailed trace data (Tracing)
 
-![](https://yqintl.alicdn.com/8ca732065c90c59ede1cc5bf16132e8c483b7bb7.png)
+![not found](https://yqintl.alicdn.com/8ca732065c90c59ede1cc5bf16132e8c483b7bb7.png)
 
 At the same time, the industry already has a wealth of open-source and commercial solutions, including:
 
@@ -152,14 +154,29 @@ manufacturer and platform.
 
 - Metrics
   - Counter - only increases - summed
-  - Measure - changes within range - aggregated
-  - Observer - value in a point of time
-  - Logs
+  - Histogram - changes within range - aggregated on the client side e.g. number of requests with latencies per buckets 1s, 5s...
+  - Gauge - value in a point of time
 - Traces - requests
+- Logs
 - Baggage - key-values propagated with context
 
 OpenTelemetry wants to solve the first step to unifying observability data. It standardizes the collection and
 transmission of observability data through API and SDK. But tools can be chosen and picked
+
+## Standard
+
+## Sampling
+
+The technique to reduce costs, because we actually do not need all the data gathered
+![](https://opentelemetry.io/docs/concepts/sampling/traces-venn-diagram.svg)
+
+### Head sampling
+
+Traces are checked before being processed as a whole, e.g. probabilistic sampling - sample only some percentage of traces
+
+### Tail sampling
+
+Allows analysing the trace for example to sample all traces with errors. Is conducted after all spans of a trace are gathered
 
 ## Overview of different distributed tracing solutions
 
@@ -185,6 +202,34 @@ Mostly missing:
 ## Jaeger
 
 - Service map doesn't show asynchronous communication, messaging systems (kafka)
+- System architecture is too simple, little information is conveyed
+- Limited use cases - only search
+
+## Signoz
+
+- Opensource
+
+## Aspecto
+
+- very simple
+- request service map
+- no presense
+- we see async consumers
+
+### Pricing
+
+40$ for 10mil of spans per month, 14 days retention
+
+## Lightstep
+
+- Power query language for charts visualization
+- Differences analysis - correlation
+- Dependency graph
+- Workflows - quickly jump from span to other external resource (graphana, logs...)
+
+### Pricing
+
+- flexible - 1$ for 10GB of data
 
 ## Honeycomb
 
@@ -196,19 +241,30 @@ Mostly missing:
 - [Service map](https://www.honeycomb.io/service-map)
 - [Sandbox](https://www.honeycomb.io/sandbox)
 
-## Aspecto
-
-- very simple
-- request service map
-- no presense 
-
 ## NewRelic
 
-## Lightstep
+- Per host view to see dependencies, operations (transactions), errors, anomalies, logs...
+- Workloads - combine entities to monitor them together (e.g. per environment, per types like storage, Node.JS, services, teams, contexts). 
+- Set SLOs
+- Error views - see errors from the whole app, assign them, comment them
+- [Anomaly detection](https://docs.newrelic.com/docs/alerts-applied-intelligence/applied-intelligence/anomaly-detection/anomaly-detection-applied-intelligence/) - for throughput, error rate, and latency
+![](https://docs.newrelic.com/static/accounts_diagram_alerting-concepts-0e954b14d2bcaedb1e46fdd7cb395ba1.webp)
+- Issues - a way to observe a problem in a system - aggregates all anomalies, services, traces, logs responsible for the problem to ensure no duplicates are created
+- has APM agents that collect telemetry and provide more insights then when OpenTelemetry is used. Not easy to setup for OpenTel because many features are not included [docs](https://docs.newrelic.com/docs/more-integrations/open-source-telemetry-integrations/opentelemetry/opentelemetry-comparison/)
+- extensive trace visualization
+- trace groups
+- Change tracking - helps identify reason for performance changes - [](https://newrelic.com/platform/change-tracking)
+- limited capabilities with messaging systems
 
-- Power query language
-- Differences analysis
-- Dependency graph
-- Workflows - quickly jump from span to other external resource (graphana, logs...)
+### Price
 
-- No logs support
+- 30 cents per GB over 100 GB 
+
+- Basic users - suitable for QAs - free
+- Core users - most devs as it allows more visibility
+- Full platform users - DevOps, SRE
+
+![plan](https://i.imgur.com/pgWVCIH.jpeg)
+
+## Other
+- [Sentry performance](https://vimeo.com/837631437) - sentry SDK has to be used, not all languages are supported
